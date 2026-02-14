@@ -587,12 +587,13 @@ function UI:CreateDropdown(tabName, sectionName, dropdownName, options, default,
     DropdownName.TextXAlignment = Enum.TextXAlignment.Left
     DropdownName.Parent = dropdownZone
     
-    local DropdownButton = Instance.new("Frame")
+    local DropdownButton = Instance.new("TextButton")
     DropdownButton.Name = "DropdownButton"
     DropdownButton.Size = UDim2.new(0, 111, 0, 24)
     DropdownButton.Position = UDim2.new(0.422651023, 0, 0.134209335, 0)
     DropdownButton.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
     DropdownButton.BorderSizePixel = 0
+    DropdownButton.Text = ""
     DropdownButton.ClipsDescendants = true
     DropdownButton.Parent = dropdownZone
     
