@@ -689,12 +689,13 @@ function UI:CreateInput(tabName, sectionName, inputName, placeholder, callback)
     InputName.TextXAlignment = Enum.TextXAlignment.Left
     InputName.Parent = inputZone
     
-    local Input = Instance.new("Frame")
+    local Input = Instance.new("TextButton")
     Input.Name = "Input"
     Input.Size = UDim2.new(0, 170, 0, 20)
     Input.Position = UDim2.new(0.0909999982, 0, 0.349999994, 0)
     Input.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
     Input.BorderSizePixel = 0
+    Input.Text = ""
     Input.Parent = inputZone
     
     local UICorner = Instance.new("UICorner")
@@ -800,12 +801,13 @@ function UI:CreateBind(tabName, sectionName, bindName, defaultKey, callback)
     BindName.TextXAlignment = Enum.TextXAlignment.Left
     BindName.Parent = bindZone
     
-    local Bind = Instance.new("Frame")
+    local Bind = Instance.new("TextButton")
     Bind.Name = "Bind"
     Bind.Size = UDim2.new(0, 60, 0, 15)
     Bind.Position = UDim2.new(0.600000024, 0, 0.233333334, 0)
     Bind.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
     Bind.BorderSizePixel = 0
+    Bind.Text = ""
     Bind.Parent = bindZone
     
     local UICorner = Instance.new("UICorner")
